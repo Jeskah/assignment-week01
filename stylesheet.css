@@ -1,71 +1,156 @@
-
-* { 
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 
-header {
-    position: fixed;
-    top: 0;
-    background-color: rgba(255, 19, 19, 0.815);
-    width: 100%;
-    height: 100px;
-    z-index: 10;
-}
-
-header h1 {
-    color: rgb(255, 255, 255);
-}
-
-li {
-    color: rgb(255, 255, 255);
-}
-
-
-nav ul {
-    gap: 20px;
+header { 
     display: flex;
-    list-style: none;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
 }
 
-img {
+nav {
+    display: flex;
+}
+
+
+.navcontainer {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+
+    padding: 30px;
+    background-color: rgb(0, 0, 0, 0.8);
+    height: 80px;
     width: 100%;
-    display: block;
+    
 }
 
-.container1, .container2 {
-    height: 700px;
-    display: block;
-    position: relative;
-}
-
-.container1 img,
-.container2 img {
-    width: 100%;
-    height: 100%;      
-    object-fit: cover;  
-    display: block;
-}
-
-.cta1, .cta2 { 
+.logo {
+    
     position: absolute;
-    bottom: 150px;
-    left: 8%;
-    padding: 60px;
-    background-color: rgba(255, 255, 255, 0.815);
-    width: 300px;
-    justify-items: left;
-    z-index: 2;
+
+    left: 50px;
+    top: 20px;
+
+
+    width: 100px;
+    height: 100px;
 }
 
 
+.logo { 
+
+
+    background-image: url(https://www.freepnglogos.com/uploads/ghost-png/creepy-ghost-svg-png-icon-download-24.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    filter:invert(1)
+
+}
+
+.navlinks {
+    display: flex;
+    padding-right: 50px;
+
+    
+    gap: 70px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: antiquewhite;
+}
+
+nav a:hover {
+    color: rgb(255, 0, 51);
+}
+
+
+.imgcontainer {
+
+    position: static;
+    display: flex;
+    height: 700px;
+}
+
+
+
+.imgcontainer {
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+    z-index: 1;
+}
+
+.img1 {
+background-image: url(https://images6.alphacoders.com/715/715340.png);
+}
+
+.img2 {
+    background-image: url(https://cdn.wallpapersafari.com/2/13/AZl53M.jpg);}
+
+.img3 {
+    background-image: url(https://cdn.pixabay.com/photo/2022/10/09/02/16/haunted-house-7508035_640.jpg);}
+
+
+
+.cta1-container {
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+
+    height: 200px;
+    width: 400px;
+
+    bottom: 140px;
+    left: 50px;
+
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.text {
+
+    justify-content: space-between;
+    font-size: 12px;
+    color: antiquewhite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 30px;
+    
+}
+
+h1 {
+    font-size: 30px;
+
+}
 
 button {
-    padding: 5%;
-    width: 150px;
+    border: none;
+    height: 40px;
+    width: 100px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(255, 0, 51);
 }
 
 
 
+
+
+footer {
+    height: 300px;
+
+    background-color: black;
+}
