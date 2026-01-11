@@ -5,6 +5,7 @@
 }
 
 
+
 header { 
     display: flex;
     flex-direction: row-reverse;
@@ -28,16 +29,25 @@ nav {
     background-color: rgb(0, 0, 0, 0.8);
     height: 80px;
     width: 100%;
+
+    
     
 }
 
 .logo {
-    
+    transition: opacity 125ms ease-in-out;
+    opacity: 1;
+}
+
+
+.logo {
     position: absolute;
+
+    transition: opacity 125ms ease-in-out;
+    opacity: 1;
 
     left: 50px;
     top: 20px;
-
 
     width: 100px;
     height: 100px;
@@ -45,8 +55,6 @@ nav {
 
 
 .logo { 
-
-
     background-image: url(https://www.freepnglogos.com/uploads/ghost-png/creepy-ghost-svg-png-icon-download-24.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -68,6 +76,7 @@ nav a {
     text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: antiquewhite;
+    letter-spacing: 0.3px;
 }
 
 nav a:hover {
@@ -75,21 +84,56 @@ nav a:hover {
 }
 
 
-.imgcontainer {
+/* .search-container {
+    display: flex;    
+    position: fixed;
 
-    position: relative;
+    align-items: center;
+
+    width: 190px;
+    height: 30px;
+
+    background-color:rgba(0, 0, 0, 0.5);
+    border: 3px solid black;
+    border-radius: 100px;
+
+    left: 50px;
+    top: 70px;
+
+    overflow: hidden;
+} */
+
+
+.search-container {
     display: flex;
-    height: 700px;
+    position: relative;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    border-radius: 0px;
+    background-color: black;
+    font-size: 12px;
 }
 
 
+.imgcontainer {
+    display: flex;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 700px;
+}
 
 .imgcontainer {
     background-size: cover; 
     background-repeat: no-repeat;
 
-    
-    /* z-index: 1; */
 }
 
 .img1 {
@@ -99,33 +143,96 @@ nav a:hover {
     background-image: url(https://cdn.wallpapersafari.com/2/13/AZl53M.jpg);}
 
 .img3 {
-    background-image: url(https://cdn.pixabay.com/photo/2022/10/09/02/16/haunted-house-7508035_640jpg);}
+    background-image: url(https://cdn.pixabay.com/photo/2022/10/09/02/16/haunted-house-7508035_640.jpg);}
 
-
+.cta {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
 
 .cta1-container {
 
-    display: flex;
-    flex-direction: column;
-
     position: absolute;
+    justify-content: space-evenly;
+   
 
-    height: 200px;
+    height: 240px;
     width: 400px;
-
+    gap: 12px;
     bottom: 140px;
     left: 50px;
 
     background-color: rgb(0, 0, 0, 0.5);
+}
+
+
+.cta2 {
+    position: relative;
+    display: flex;
+    flex-direction: column 0px;
+    justify-content: space-between;
+    gap: 20px;
+
+    text-align: center;
+
 }
 
 .cta2-container {
+    padding: 40px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+
+
+    /* width: 1000px;
+    height: 300px; */
+
+    background-color: rgb(0, 0, 0, 0.5);
+
+}
+
+.beware {
+    font-size: 80px;
+    color: antiquewhite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.yesnoBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+
+.cta2btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 12px;
+    color: antiquewhite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+
+
+
+
+
+.cta3-container {
 
     display: flex;
     flex-direction: column;
 
     position: absolute;
-    z-index: 1;
+    /* z-index: 1; */
 
     height: 200px;
     width: 400px;
@@ -138,15 +245,7 @@ nav a:hover {
 
 }
 
-.text {
 
-    justify-content: space-between;
-    font-size: 12px;
-    color: antiquewhite;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 30px;
-    
-}
 
 h1 {
     font-size: 30px;
@@ -154,8 +253,11 @@ h1 {
 }
 
 button {
-
-    border: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.3px;
+    background-color:antiquewhite;
+    /* border-color: antiquewhite;
+    border-style: solid; */
     height: 40px;
     width: 100px;
 
@@ -164,11 +266,14 @@ button {
 
 button:hover {
     background-color: rgb(255, 0, 51);
+    
 }
 
-.myBtn {
-    justify-content: flex-end;
-}
+/* .myBtn {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.3px;
+} */
+
 
 
 footer {
