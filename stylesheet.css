@@ -10,6 +10,8 @@ header {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+
+    z-index: 1;
 }
 
 nav {
@@ -75,7 +77,7 @@ nav a:hover {
 
 .imgcontainer {
 
-    position: static;
+    position: relative;
     display: flex;
     height: 700px;
 }
@@ -83,22 +85,21 @@ nav a:hover {
 
 
 .imgcontainer {
-    background-size: cover;
+    background-size: cover; 
     background-repeat: no-repeat;
 
     
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .img1 {
-background-image: url(https://images6.alphacoders.com/715/715340.png);
-}
+    background-image: url(https://images6.alphacoders.com/715/715340.png);}
 
 .img2 {
     background-image: url(https://cdn.wallpapersafari.com/2/13/AZl53M.jpg);}
 
 .img3 {
-    background-image: url(https://cdn.pixabay.com/photo/2022/10/09/02/16/haunted-house-7508035_640.jpg);}
+    background-image: url(https://cdn.pixabay.com/photo/2022/10/09/02/16/haunted-house-7508035_640jpg);}
 
 
 
@@ -118,6 +119,25 @@ background-image: url(https://images6.alphacoders.com/715/715340.png);
     background-color: rgb(0, 0, 0, 0.5);
 }
 
+.cta2-container {
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    z-index: 1;
+
+    height: 200px;
+    width: 400px;
+
+    bottom: 140px;
+    left: 50px;
+
+    background-color: rgb(0, 0, 0, 0.5);
+
+
+}
+
 .text {
 
     justify-content: space-between;
@@ -134,6 +154,7 @@ h1 {
 }
 
 button {
+
     border: none;
     height: 40px;
     width: 100px;
@@ -145,8 +166,9 @@ button:hover {
     background-color: rgb(255, 0, 51);
 }
 
-
-
+.myBtn {
+    justify-content: flex-end;
+}
 
 
 footer {
